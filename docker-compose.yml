@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Main HydroNet Gamified application
+  hydronet-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
+    networks:
+      - hydronet-network
+
+  # Flood Forecasting Mobile App
+  flood-forecast-app:
+    build:
+      context: ./flood-forecast-app  # This will be the location after we clone the repo
+      dockerfile: Dockerfile         # Using the existing Dockerfile from the repo
+    ports:
+      - "8081:8081"
+    environment:
+      - NODE_ENV=production
+    restart: always
+    networks:
+      - hydronet-network
+
+networks:
+  hydronet-network:
+    driver: bridge
