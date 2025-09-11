@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { FloodScenario, UserProfile, GameAction } from '@/types';
+import { FloodScenario, UserProfile, GameAction } from '@/types/index';
 import { 
   ArrowLeftIcon, 
   ArrowRightIcon, 

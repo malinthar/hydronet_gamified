@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { GameSession } from '@/types';
+import { GameSession } from '@/types/index';
 import { 
   ArrowRightIcon, 
   StarIcon,

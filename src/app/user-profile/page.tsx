@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { UserProfile } from '@/types';
+import { UserProfile } from '@/types/index';
 import { ArrowRightIcon, UserIcon } from '@heroicons/react/24/outline';
 
 export default function UserProfilePage() {
