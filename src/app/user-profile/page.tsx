@@ -35,7 +35,7 @@ export default function UserProfilePage() {
     router.push('/scenario-builder');
   };
 
-  const updateField = (field: keyof UserProfile, value: any) => {
+  const updateField = (field: keyof UserProfile, value: string | number) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 

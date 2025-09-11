@@ -48,7 +48,7 @@ export default function ScenarioBuilderPage() {
     }
   }, [router]);
 
-  const updateParameter = (param: string, value: any) => {
+  const updateParameter = (param: string, value: string | number) => {
     setScenario(prev => ({
       ...prev,
       parameters: {
@@ -174,7 +174,7 @@ export default function ScenarioBuilderPage() {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choose preset scenarios or customise parameters to create a realistic flood situation. 
-            These settings will determine the conditions you'll face in the simulation.
+            These settings will determine the conditions you&apos;ll face in the simulation.
           </p>
         </motion.div>
 
@@ -507,10 +507,10 @@ export default function ScenarioBuilderPage() {
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• {scenario.parameters?.rainfall} mm/hour rainfall</li>
                     <li>• River +{scenario.parameters?.riverLevel}m above normal</li>
-                    <li>• {scenario.parameters?.soilSaturation}% soil saturation</li>
-                    <li>• {scenario.parameters?.urbanization}% urbanized area</li>
-                    <li>• {scenario.parameters?.drainageCapacity}% drainage capacity</li>
-                    <li>• {scenario.parameters?.duration} hour duration</li>
+                    <li>&bull; {scenario.parameters?.soilSaturation}% soil saturation</li>
+                    <li>&bull; {scenario.parameters?.urbanization}% urbanized area</li>
+                    <li>&bull; {scenario.parameters?.drainageCapacity}% drainage capacity</li>
+                    <li>&bull; {scenario.parameters?.duration} hour duration</li>
                   </ul>
                 </div>
 

@@ -124,7 +124,7 @@ export default function GamePage() {
                 Emergency Response Mission
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                You're about to experience a high-stakes flood scenario using advanced forecasting technology. 
+                You&apos;re about to experience a high-stakes flood scenario using advanced forecasting technology. 
                 Your decisions will impact lives and infrastructure in Westport.
               </p>
               <div className="mt-6 inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
@@ -197,7 +197,7 @@ export default function GamePage() {
               </h2>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <p className="text-blue-800">
-                  As a <strong>{userProfile.userCategory.replace('-', ' ')}</strong>, you'll use the flood forecasting mobile app 
+                  As a <strong>{userProfile.userCategory.replace('-', ' ')}</strong>, you&apos;ll use the flood forecasting mobile app 
                   to understand the situation and make decisions. The app will provide real-time information about 
                   flood conditions, warnings, and recommendations.
                 </p>
@@ -266,7 +266,7 @@ export default function GamePage() {
             <div 
               className="absolute inset-0 bg-cover bg-center" 
               style={{ 
-                backgroundImage: `url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajIzc2oxODEyNGFqZjZ3b281aHVzNTZoMGZqOTl3eG4wYnE1dm9yYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tnPxFTth7qoDiw1rnm/giphy.gif')`,
+                backgroundImage: `url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajIzc2oxODEyNGFqZjZ3b281aHVzNTZoMGZqOTl3eG4wYnE1dm9yYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tnPxFTth7qoDiw1rnm/giphy.gif")`,
                 backgroundBlendMode: 'screen',
                 opacity: 1
               }} 
