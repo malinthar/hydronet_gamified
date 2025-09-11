@@ -220,14 +220,14 @@ export default function ScenarioBuilderPage() {
                         <>
                           <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                           <span className="text-sm font-medium text-orange-800">
-                            Modified "{selectedPreset}" - Your custom variation
+                            Modified &quot;{selectedPreset}&quot; - Your custom variation
                           </span>
                         </>
                       ) : (
                         <>
                           <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                           <span className="text-sm font-medium text-blue-800">
-                            Using preset: "{selectedPreset}"
+                            Using preset: &quot;{selectedPreset}&quot;
                           </span>
                         </>
                       )}
@@ -282,7 +282,7 @@ export default function ScenarioBuilderPage() {
                 <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-700">
                     {selectedPreset 
-                      ? `Adjust the parameters below to modify the "${selectedPreset}" scenario. Changes will create your custom variation.`
+                      ? <>Adjust the parameters below to modify the &quot;{selectedPreset}&quot; scenario. Changes will create your custom variation.</>
                       : 'Configure the environmental conditions to create your custom flood scenario.'
                     }
                   </p>
