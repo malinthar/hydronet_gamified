@@ -327,7 +327,7 @@ export default function GamePage() {
                         <div className="w-full h-[800px] border border-blue-700 rounded-lg overflow-hidden shadow-lg bg-slate-900/90">
                           <div className="w-full h-full p-1 border border-blue-900 rounded-lg overflow-hidden">
                             <iframe 
-                              src={process.env.NEXT_PUBLIC_FORECAST_APP_URL || "http://localhost:8081/"}
+                              src={"https://hydronet-eta.vercel.app/"}
                               className="w-full h-full border-0 rounded-lg"
                               title="Flood Forecasting App"
                               sandbox="allow-same-origin allow-scripts allow-forms"
