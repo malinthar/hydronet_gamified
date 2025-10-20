@@ -96,7 +96,7 @@ export default function GamePage() {
   };
 
   const endGame = () => {
-    // Save game session data
+    // Save game session data locally for reference
     const gameSession = {
       id: Date.now().toString(),
       userProfile: userProfile!,
@@ -107,7 +107,13 @@ export default function GamePage() {
     };
     
     localStorage.setItem('gameSession', JSON.stringify(gameSession));
-    router.push('/feedback');
+    
+    // Open Google Form in a new tab for feedback
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdnRb0S8cP6aprOTOMtbpeSVSLHjf4tW-fNA4e4BVHBOwRHiw/viewform?usp=header'; // Replace with your actual Google Form URL
+    window.open(googleFormUrl, '_blank');
+    
+    // Optionally redirect to a thank you page or home
+    router.push('/');
   };
 
   const goBackToScenario = () => {
