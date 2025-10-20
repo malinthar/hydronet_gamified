@@ -61,7 +61,7 @@ export default function Home() {
                 className="relative"
               >
                 <Image
-                  src="/web_background.png"
+                  src="/presets/web_background.png"
                   alt="HydroNet Flood Forecasting Game - Interactive flood simulation with mobile app interface"
                   width={800}
                   height={500}
