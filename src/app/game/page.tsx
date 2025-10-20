@@ -109,7 +109,7 @@ export default function GamePage() {
     localStorage.setItem('gameSession', JSON.stringify(gameSession));
     
     // Open Google Form in a new tab for feedback
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdnRb0S8cP6aprOTOMtbpeSVSLHjf4tW-fNA4e4BVHBOwRHiw/viewform?usp=header'; // Replace with your actual Google Form URL
+    const googleFormUrl = ''; // Replace with your actual Google Form URL
     window.open(googleFormUrl, '_blank');
     
     // Optionally redirect to a thank you page or home
